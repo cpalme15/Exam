@@ -1,0 +1,10 @@
+private static void myReverse(String str) {
+    String reverse = "";
+    int length = str.length();
+    for( int i = length - 1 ; i >= 0 ; i-- ) {
+       reverse = reverse + str.charAt(i);
+    }
+   reverse= reverse.toLowerCase();
+    reverse=reverse.substring(0,1).toUpperCase()+reverse.substring(1);
+    System.out.println(reverse);
+    }
